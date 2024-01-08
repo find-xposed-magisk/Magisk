@@ -1,0 +1,12 @@
+{
+  "magisk": {
+    "version": "dc7419b9-delta",
+    "versionCode": "26105",
+    "link": "https://github.com/huskydg/magisk-files/releases/download/dc7419b9-delta/app-release.apk",
+    "note": "https://github.com/huskydg/magisk-files/releases/download/dc7419b9-delta/note.md"
+  },
+  "stub": {
+    "versionCode": "36",
+    "link": "https://github.com/huskydg/magisk-files/releases/download/dc7419b9-delta/stub-release.apk"
+  }
+}

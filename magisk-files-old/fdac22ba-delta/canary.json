@@ -1,0 +1,12 @@
+{
+  "magisk": {
+    "version": "fdac22ba-delta",
+    "versionCode": "25210",
+    "link": "https://github.com/huskydg/magisk-files/releases/download/fdac22ba-delta/app-release.apk",
+    "note": "https://github.com/huskydg/magisk-files/releases/download/fdac22ba-delta/note.md"
+  },
+  "stub": {
+    "versionCode": "35",
+    "link": "https://github.com/huskydg/magisk-files/releases/download/fdac22ba-delta/stub-release.apk"
+  }
+}

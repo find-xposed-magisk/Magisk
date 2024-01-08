@@ -1,0 +1,12 @@
+{
+  "magisk": {
+    "version": "630abd8b-delta",
+    "versionCode": "25210",
+    "link": "https://github.com/huskydg/magisk-files/releases/download/630abd8b-delta/app-debug.apk",
+    "note": "https://github.com/huskydg/magisk-files/releases/download/630abd8b-delta/note.md"
+  },
+  "stub": {
+    "versionCode": "35",
+    "link": "https://github.com/huskydg/magisk-files/releases/download/630abd8b-delta/stub-debug.apk"
+  }
+}

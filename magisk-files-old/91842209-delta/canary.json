@@ -1,0 +1,12 @@
+{
+  "magisk": {
+    "version": "91842209-delta",
+    "versionCode": "25209",
+    "link": "https://github.com/huskydg/magisk-files/releases/download/91842209-delta/app-release.apk",
+    "note": "https://github.com/huskydg/magisk-files/releases/download/91842209-delta/note.md"
+  },
+  "stub": {
+    "versionCode": "35",
+    "link": "https://github.com/huskydg/magisk-files/releases/download/91842209-delta/stub-release.apk"
+  }
+}

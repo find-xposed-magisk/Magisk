@@ -1,0 +1,12 @@
+{
+  "magisk": {
+    "version": "d79f32a3-delta",
+    "versionCode": "25209",
+    "link": "https://github.com/huskydg/magisk-files/releases/download/d79f32a3-delta/app-release.apk",
+    "note": "https://github.com/huskydg/magisk-files/releases/download/d79f32a3-delta/note.md"
+  },
+  "stub": {
+    "versionCode": "35",
+    "link": "https://github.com/huskydg/magisk-files/releases/download/d79f32a3-delta/stub-release.apk"
+  }
+}
