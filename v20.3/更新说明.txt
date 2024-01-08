@@ -1,0 +1,3 @@
+Fix `magiskboot` crashing when dealing with `lz4_legacy` format
+
+### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)
