@@ -1,9 +1,6 @@
-## R65C33E4F-kitsune (27001)
+## R6687BB53-kitsune (27001)
 
-- No longer change mounting `su` path to `/apex/com.android.runtime/bin` since it breaks some superuser apps
-- MagiskSU will not mounted until boot completed.
-- Make tmpfs mount of Magic mount shared
-- Revert some experimental changes.
+- Minor zygisk changes
 
 If you want to read changelog of previous builds, please visit [Release page](https://github.com/HuskyDG/magisk-files/releases)
 
