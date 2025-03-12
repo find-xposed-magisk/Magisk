@@ -8,7 +8,7 @@
 
 ## Stable / Beta
 
-- [Kitsune Mask v26.4 Stable](https://github.com/HuskyDG/download/raw/main/magisk/26.4-kitsune.exe)
+- [Kitsune Mask v26.4 Stable](https://github.com/HuskyDG/download/raw/main/magisk/26.4-kitsune.zip)
 
 ## Canary / Debug
 
